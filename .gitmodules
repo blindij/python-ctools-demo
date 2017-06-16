@@ -1,3 +1,6 @@
 [submodule "phoneticA/pybind11"]
 	path = phoneticA/pybind11
 	url = https://github.com/pybind/pybind11.git
+[submodule "pybind11-demo/pybind11"]
+	path = pybind11-demo/pybind11
+	url = https://github.com/pybind/pybind11.git
