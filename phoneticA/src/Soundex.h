@@ -1,6 +1,6 @@
 // file: Soundex.h
-#ifndef SOUNDEX_SOUNDEX_H
-#define SOUNDEX_SOUNDEX_H
+#ifndef SOUNDEX_H
+#define SOUNDEX_H
 #include <string>
 #include <unordered_map>
 
@@ -92,4 +92,4 @@ private:
     }
 };
 
-#endif //SOUNDEX_SOUNDEX_H
+#endif //SOUNDEX_H
