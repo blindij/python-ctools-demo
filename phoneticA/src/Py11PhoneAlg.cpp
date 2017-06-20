@@ -18,18 +18,24 @@ public:
 			    );
   }
 };
+
+std::string call_encode(PhoneticAlgorithm& phxalg) {
+  return phxalg.encode("Allison");
+}
   
 PYBIND11_MODULE(phoneticA, mod) {
   mod.doc() = "pybind11 phonetic plugin";
 
-  py::class_<PhoneticAlgorithm, PyPhoneticAlg> phalgo(mod,"PhoneticAlgorithm");
+  py::class_<PhoneticAlgorithm, PyPhoneticAlg> phalgo(mod,"phalgo");
   phalgo
     .def(py::init<>())
     .def("encode", &PhoneticAlgorithm::encode);
 
-  py::class_<Soundex>(mod,"soundex")
+  py::class_<Soundex>(mod,"sndx",phalgo)
     .def(py::init<>())
     .def("encode", &Soundex::encode);
+
+  mod.def("call_encode", &call_encode);
 
 }
 
