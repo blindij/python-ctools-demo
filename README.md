@@ -15,11 +15,13 @@ can be called from python with the use of Cython.
 The second example is an implementation of the Soundex algorithm. The implementation
 is taken from [Jeff Langr's](http://langrsoft.com/about/) book
 [Modern C++ Programming with Test-Driven Development](http://pragprog.com/book/lotdd/modern-c-programming-with-test-driven-development))
+We will use Pybind11 to make a module of the C++-source code.
 
 ## Lower-level learning goals
 
 - Show how distutils can be used to build a Python library
 - Show how CMake can be used to accomblish the same thing
+- Show how Pybind11 can be used
 
 ## Requirements
 
