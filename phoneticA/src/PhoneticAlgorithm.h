@@ -1,6 +1,6 @@
-// file: PhoneticAlgorithms.h
-#ifndef PHONETICALGORITHMS_H
-#define PHONETICALGORITHMS_H
+// file: PhoneticAlgorithm.h
+#ifndef PHONETICALGORITHM_H
+#define PHONETICALGORITHM_H
 
 class PhoneticAlgorithm{
  public:
@@ -8,4 +8,4 @@ class PhoneticAlgorithm{
   virtual std::string encode(const std::string& word) const = 0;  // pure virtual function
 };
 
-#endif //PHONETICALGORITHMS_H
+#endif //PHONETICALGORITHM_H
