@@ -19,11 +19,6 @@ public:
   }
 };
   
-  //
-  // Here something the Pybind11 documentatio calls trampoline.
-  // It helps us create a constructour for a class with virtual functions
-  //
-  
 PYBIND11_MODULE(phoneticA, mod) {
   mod.doc() = "pybind11 phonetic plugin";
 
