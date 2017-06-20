@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/badge/license-%20MPL--v2.0-blue.svg)](../master/LICENSE)
 
 
-# python-cython-demo
+# python-ctools-demo
 
 Inspired by Kurt W. Smith's book on [Cython](http://shop.oreilly.com/product/0636920033431.do)
 
@@ -14,7 +14,7 @@ can be called from python with the use of Cython.
 
 The second example is an implementation of the Soundex algorithm. The implementation
 is taken from [Jeff Langr's](http://langrsoft.com/about/) book
-[Modern C++ Programming with Test-Driven Development](http://pragprog.com/book/lotdd/modern-c-programming-with-test-driven-development))
+[Modern C++ Programming with Test-Driven Development](http://pragprog.com/book/lotdd/modern-c-programming-with-test-driven-development)
 We will use Pybind11 to make a module of the C++-source code.
 
 ## Lower-level learning goals
