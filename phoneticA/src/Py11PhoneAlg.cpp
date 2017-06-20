@@ -26,12 +26,11 @@ std::string call_encode(PhoneticAlgorithm& phxalg) {
 PYBIND11_MODULE(phoneticA, mod) {
   mod.doc() = "pybind11 phonetic plugin";
 
-  py::class_<PhoneticAlgorithm, PyPhoneticAlg> phalgo(mod,"phalgo");
-  phalgo
+  py::class_<PhoneticAlgorithm, PyPhoneticAlg> (mod,"phalgo",py::dynamic_attr())
     .def(py::init<>())
     .def("encode", &PhoneticAlgorithm::encode);
 
-  py::class_<Soundex>(mod,"sndx",phalgo)
+  py::class_<Soundex,PhoneticAlgorithm>(mod,"sndx")
     .def(py::init<>())
     .def("encode", &Soundex::encode);
 
