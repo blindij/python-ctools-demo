@@ -6,11 +6,15 @@
 
 Inspired by Kurt W. Smith's book on [Cython](http://shop.oreilly.com/product/0636920033431.do)
 
-## Example
+## Examples
 
-This example make use of a simple C++ source code which implements two Taylor
-series sinus() and cosinus(). The point is to illustrate how C/C++ functions
+The first example make use of a simple C++ source code which implements two Taylor
+series sine() and cosine(). The point is to illustrate how C/C++ functions
 can be called from python with the use of Cython.
+
+The second example is an implementation of the Soundex algorithm. The implementation
+is taken from [Jeff Langr's](http://langrsoft.com/about/) book
+[Modern C++ Programming with Test-Driven Development](http://pragprog.com/book/lotdd/modern-c-programming-with-test-driven-development))
 
 ## Lower-level learning goals
 
@@ -25,10 +29,4 @@ can be called from python with the use of Cython.
 - C++ compilers
 
 
-## Installing Python dependencies
-
-In this example using [Virtual Environments](http://python-guide.readthedocs.io/en/latest/dev/virtualenvs/)
-but also
-[Anaconda](https://www.continuum.io/downloads) or
-[Miniconda](https://conda.io/miniconda.html) will do the job:
 
